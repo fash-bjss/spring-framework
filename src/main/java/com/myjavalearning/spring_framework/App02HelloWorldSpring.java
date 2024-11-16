@@ -28,5 +28,11 @@ public class App02HelloWorldSpring {
         System.out.println(thePersonBean);
         System.out.println(theAddressBean);
 
+        // We can also retrieve beans by their type, so type.class
+        Object theStringBeans = context.getBean(Address.class);
+
+        System.out.println("Retrieved by type");
+        System.out.println(theStringBeans);
+
     }
 }
