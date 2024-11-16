@@ -18,9 +18,11 @@ public class App02HelloWorldSpring {
         // calling it on the context created above context.getBean()
         Object theNameBean = context.getBean("name");
         Object theAgeBean = context.getBean("age");
+        Object thePersonBean = context.getBean("person");
 
         System.out.println(theNameBean);
         System.out.println(theAgeBean);
+        System.out.println(thePersonBean);
 
     }
 }

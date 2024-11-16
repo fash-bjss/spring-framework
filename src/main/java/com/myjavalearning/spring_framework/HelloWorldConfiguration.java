@@ -17,4 +17,8 @@ public class HelloWorldConfiguration {
         return 65;
     }
 
+    @Bean
+    public Person person(){
+        return new Person("David", 45);
+    }
 }
