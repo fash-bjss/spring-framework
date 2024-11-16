@@ -1,7 +1,7 @@
 package com.myjavalearning.spring_framework;
 import com.myjavalearning.spring_framework.game.*;
 
-public class AppGamingBasic {
+public class App01GamingBasic {
     public static void main(String[] args){
 //        MarioGame game = new MarioGame();
 //        SuperContraGame game = new SuperContraGame();
