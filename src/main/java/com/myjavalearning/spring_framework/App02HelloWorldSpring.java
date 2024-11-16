@@ -20,9 +20,13 @@ public class App02HelloWorldSpring {
         Object theAgeBean = context.getBean("age");
         Object thePersonBean = context.getBean("person");
 
+        // Challenge create the address record and bean
+        Object theAddressBean = context.getBean("address");
+
         System.out.println(theNameBean);
         System.out.println(theAgeBean);
         System.out.println(thePersonBean);
+        System.out.println(theAddressBean);
 
     }
 }

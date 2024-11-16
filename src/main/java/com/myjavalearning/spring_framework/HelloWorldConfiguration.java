@@ -21,4 +21,9 @@ public class HelloWorldConfiguration {
     public Person person(){
         return new Person("David", 45);
     }
+
+    @Bean
+    public Address address(){
+        return new Address("55 Park Way", "Lodnon");
+    }
 }
