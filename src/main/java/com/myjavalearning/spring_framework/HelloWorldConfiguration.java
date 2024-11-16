@@ -22,7 +22,8 @@ public class HelloWorldConfiguration {
         return new Person("David", 45);
     }
 
-    @Bean
+    // to customise the name of a bean you can add an attribute @Bean(name = "yourCustomName")
+    @Bean(name = "mainAddress")
     public Address address(){
         return new Address("55 Park Way", "Lodnon");
     }
