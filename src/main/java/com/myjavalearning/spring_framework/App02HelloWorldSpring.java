@@ -40,5 +40,11 @@ public class App02HelloWorldSpring {
         System.out.println("\nMethod Call Bean");
         System.out.println(thePersonWithMethodCall);
 
+        // Calling bean that is using parameters to use other beans
+        Object thePersonWithParameter = context.getBean("person3Parameter");
+
+        System.out.println("\nParameter Bean");
+        System.out.println(thePersonWithParameter);
+
     }
 }

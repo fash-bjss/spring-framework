@@ -19,7 +19,7 @@ public class HelloWorldConfiguration {
 
     @Bean
     public Person person(){
-        return new Person("David", 45);
+        return new Person("David", 45, new Address("45 Turner Lane", "Cardiff"));
     }
 
     // to customise the name of a bean you can add an attribute @Bean(name = "yourCustomName")
@@ -30,8 +30,16 @@ public class HelloWorldConfiguration {
 
     // How about if we want to create another bean that is using an existing bean already managed by Spring
     // There are 2 ways:
+
     // 1: Method Calls - call the previous name() and age() bean.
-    @Bean Person person2MethodCall(){
-        return new Person(name(), age());
+    @Bean
+    public Person person2MethodCall(){
+        return new Person(name(), age(), address());
+    }
+
+    //2: Parameters - The second way to reuse pre-existing beans is using
+    @Bean
+    public Person person3Parameter(String name, int age, Address mainAddress){
+        return new Person(name, age, mainAddress);
     }
 }

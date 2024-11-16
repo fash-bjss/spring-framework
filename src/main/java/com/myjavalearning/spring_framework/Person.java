@@ -7,7 +7,7 @@ package com.myjavalearning.spring_framework;
 
 // Records are ideal for simple data carriers, making code cleaner and more concise
 
-public record Person(String name, int age) {
+public record Person(String name, int age, Address address) {
     // record does not need a constructor
     // record does not need getters
 }
