@@ -2,9 +2,11 @@ package com.myjavalearning.spring_framework.game;
 
 public class GameRunner {
 
-    private MarioGame game;
+    // The problem here is that SuperContra is tightly coupled so
+    // We have to keep making changes to this class when we want to play a new game
+    private SuperContra game;
 
-    public GameRunner(MarioGame game){
+    public GameRunner(SuperContra game){
         this.game = game;
     }
 
