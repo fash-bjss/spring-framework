@@ -1,7 +1,6 @@
 package com.myjavalearning.spring_framework.game;
 
-public class MarioGame {
-
+public class MarioGame implements IGamingConsole {
 
     public void up(){
         System.out.println("Jump");

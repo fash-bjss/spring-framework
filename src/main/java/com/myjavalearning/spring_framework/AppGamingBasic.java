@@ -3,10 +3,10 @@ import com.myjavalearning.spring_framework.game.*;
 
 public class AppGamingBasic {
     public static void main(String[] args){
-        MarioGame marioGame = new MarioGame();
-        SuperContra superContra = new SuperContra();
+        MarioGame game = new MarioGame();
+//        SuperContra game = new SuperContra();
 
-        GameRunner gameRunner = new GameRunner(superContra);
+        GameRunner gameRunner = new GameRunner(game);
 
         gameRunner.run();
     }

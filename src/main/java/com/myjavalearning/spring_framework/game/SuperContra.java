@@ -1,6 +1,6 @@
 package com.myjavalearning.spring_framework.game;
 
-public class SuperContra {
+public class SuperContra implements IGamingConsole {
 
     public void up(){
         System.out.println("up");
