@@ -16,9 +16,11 @@ public class App02HelloWorldSpring {
         // 3: Now we are retrieving the Beans managed by Spring
         // In order for us to see what beans Spring is managing we can use the .getBean() method
         // calling it on the context created above context.getBean()
-        Object theBean = context.getBean("name");
+        Object theNameBean = context.getBean("name");
+        Object theAgeBean = context.getBean("age");
 
-        System.out.println(theBean);
+        System.out.println(theNameBean);
+        System.out.println(theAgeBean);
 
     }
 }
