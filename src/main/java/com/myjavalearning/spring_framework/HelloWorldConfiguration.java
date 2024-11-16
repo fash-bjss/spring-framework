@@ -27,4 +27,11 @@ public class HelloWorldConfiguration {
     public Address address(){
         return new Address("55 Park Way", "Lodnon");
     }
+
+    // How about if we want to create another bean that is using an existing bean already managed by Spring
+    // There are 2 ways:
+    // 1: Method Calls - call the previous name() and age() bean.
+    @Bean Person person2MethodCall(){
+        return new Person(name(), age());
+    }
 }

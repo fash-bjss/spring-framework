@@ -34,5 +34,11 @@ public class App02HelloWorldSpring {
         System.out.println("Retrieved by type");
         System.out.println(theStringBeans);
 
+        // Calling bean that is using a method call to use other beans
+        Object thePersonWithMethodCall = context.getBean("person2MethodCall");
+
+        System.out.println("\nMethod Call Bean");
+        System.out.println(thePersonWithMethodCall);
+
     }
 }
