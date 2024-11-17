@@ -3,6 +3,8 @@ package com.myjavalearning.spring_framework;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 public class App02HelloWorldSpring {
     public static void main(String[] args){
         // 1: Launch a spring context
@@ -45,6 +47,15 @@ public class App02HelloWorldSpring {
 
         System.out.println("\nParameter Bean");
         System.out.println(thePersonWithParameter);
+
+        // In order to get all beans managed by Spring we can use the
+        // .getBeanDefinitionNames() function which in this case can be run on context
+
+        String[] allBeans = context.getBeanDefinitionNames();
+
+        for(String strBean : allBeans){
+            System.out.println(strBean);
+        }
 
     }
 }
