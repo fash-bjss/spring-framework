@@ -1,9 +1,6 @@
-package com.myjavalearning.spring_framework;
+package com.myjavalearning.spring_framework.HelloWorldSpring;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.util.Arrays;
 
 public class App02HelloWorldSpring {
     public static void main(String[] args){

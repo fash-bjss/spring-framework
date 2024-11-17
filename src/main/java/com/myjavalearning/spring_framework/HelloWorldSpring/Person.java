@@ -1,4 +1,4 @@
-package com.myjavalearning.spring_framework;
+package com.myjavalearning.spring_framework.HelloWorldSpring;
 
 // A record is a new feature introduced in JDK 16
 // A record is a special type of class designed to hold immutable data (no setters).

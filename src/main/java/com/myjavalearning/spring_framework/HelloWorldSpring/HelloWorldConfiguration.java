@@ -1,4 +1,4 @@
-package com.myjavalearning.spring_framework;
+package com.myjavalearning.spring_framework.HelloWorldSpring;
 //To indicate that this is a configuration class we add the @Configuration annotation
 
 import org.springframework.beans.factory.annotation.Qualifier;
