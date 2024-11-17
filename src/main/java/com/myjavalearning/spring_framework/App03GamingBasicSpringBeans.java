@@ -14,7 +14,7 @@ public class App03GamingBasicSpringBeans {
             AnnotationConfigApplicationContext context =
                     new AnnotationConfigApplicationContext(GamingBasicConfiguration.class)
         ){
-
+            // Default game will be PacMan
             context.getBean(GameRunner.class).run();
 
         }catch(BeansException ex){
