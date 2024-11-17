@@ -14,8 +14,15 @@ public class App03GamingBasicSpringBeans {
             AnnotationConfigApplicationContext context =
                     new AnnotationConfigApplicationContext(GamingBasicConfiguration.class)
         ){
-            // Default game will be PacMan
+            // Default game will be PacMan based on the usage of @Primary annotation
             context.getBean(GameRunner.class).run();
+
+            System.out.println();
+
+            // Dynamically switch to MarioGame bean
+            IGamingConsole marioGame = context.getBean("marioGame", IGamingConsole.class);
+            GameRunner marioGameRunner = new GameRunner(marioGame);
+            marioGameRunner.run();
 
         }catch(BeansException ex){
             System.out.println(ex.getMessage());
