@@ -15,8 +15,6 @@ public class App03GamingBasicSpringBeans {
                     new AnnotationConfigApplicationContext(GamingBasicConfiguration.class)
         ){
 
-            context.getBean(IGamingConsole.class).up();
-
             context.getBean(GameRunner.class).run();
 
         }catch(BeansException ex){

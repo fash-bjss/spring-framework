@@ -3,11 +3,13 @@ package com.myjavalearning.spring_framework;
 import com.myjavalearning.spring_framework.game.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class GamingBasicConfiguration {
 
     @Bean
+    @Primary
     public IGamingConsole pacManGame(){
         return new PacManGame();
     }
