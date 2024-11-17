@@ -57,8 +57,14 @@ public class App02HelloWorldSpring {
             System.out.println(strBean);
         }
 
-        // What if we have beans that match
-        System.out.println(context.getBean(Person.class));
+        // Now we have set this to @Primary we shouldn't have any issues
+        Object primaryPerson = context.getBean(Person.class);
+        System.out.println(primaryPerson);
+
+        // Now we have the qualifier we print out the bean using the qualifier
+        Object personQualifier = context.getBean("person4Qualifier");
+        System.out.println(personQualifier);
+        System.out.println();
 
     }
 }
