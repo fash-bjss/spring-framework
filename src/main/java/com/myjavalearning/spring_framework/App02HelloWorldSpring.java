@@ -57,5 +57,8 @@ public class App02HelloWorldSpring {
             System.out.println(strBean);
         }
 
+        // What if we have beans that match
+        System.out.println(context.getBean(Person.class));
+
     }
 }
