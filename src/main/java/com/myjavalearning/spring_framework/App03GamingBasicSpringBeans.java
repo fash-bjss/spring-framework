@@ -2,6 +2,7 @@
 package com.myjavalearning.spring_framework;
 
 
+import com.myjavalearning.spring_framework.game.GameRunner;
 import com.myjavalearning.spring_framework.game.IGamingConsole;
 import org.springframework.beans.BeansException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -15,6 +16,8 @@ public class App03GamingBasicSpringBeans {
         ){
 
             context.getBean(IGamingConsole.class).up();
+
+            context.getBean(GameRunner.class).run();
 
         }catch(BeansException ex){
             System.out.println(ex.getMessage());
